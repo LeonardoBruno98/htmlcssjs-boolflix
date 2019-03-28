@@ -1,0 +1,75 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+
+.container{
+
+  width: 80%;
+  margin: auto;
+  padding-top: 15px;
+
+}
+
+.item{
+  display: flex;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.info{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px  ;
+  font-size: 18px;
+  width: 80%;
+}
+
+.info.film{
+
+  background-color: cornflowerblue;
+}
+
+.info.tv-show{
+
+  background-color: ivory;
+}
+.info .flag{
+  height: 18px;
+}
+
+.pagine{
+
+  margin-top: 10px;
+  display: flex;
+}
+
+.pagine .pagine-num{
+
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 15px;
+  text-align: center;
+  border: 1px solid black;
+
+}
+
+ul{
+  list-style: none;
+}
+.pagine .page-num.current{
+
+  background-color:YELLOW;
+}
+
+.fa-star{
+
+  color: gray;
+}
+.fa-star.accesa{
+  color: red;
+}

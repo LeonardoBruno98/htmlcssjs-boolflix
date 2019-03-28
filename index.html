@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!--awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--Moment-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!-- HANDLEBARS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js" charset="utf-8"></script>
+    <script id="film-template" type="text/x-handlebars-template">
+      <div class="item">
+        <div>
+           <img  class= "poster" src="{{ poster }}">
+        </div>
+        <ul class="info {{tipo}}">
+          <li> Titolo: {{ titolo }}</li>
+          <li> Titolo Originale: {{ ogTitolo }} </li>
+           <li> Lingua: {{#if flag}} <img  class= "flag" src="{{ flag }}"> {{/if}} {{#if lingua }}  {{ lingua }} {{/if}}</li>
+          <li class="stars"> Voto:({{ rating }}) <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+        </ul>
+    </div>
+
+    </script>
+    <script id="ptemplate" type="text/x-handlebars-template">
+      <div class="pagine-num"> {{ number }} </div>
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" charset="utf-8"></script>
+
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="">
+        <input id="search-input"type="text" name="" value="naruto">
+        <button id="search-button"type="button" name="button"> Search </button>
+      </div>
+      <div class="pagine">
+      </div>
+      <div class="Lista">
+      </div>
+    </div>
+
+  </body>
+</html>
